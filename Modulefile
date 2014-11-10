@@ -1,0 +1,10 @@
+name          'puppet-devpuppet'
+version       '0.1.0'
+source        'https://github.com/mtbvang/puppet-devpuppet.git'
+author        'Vang Nguyen <mtb.vang@gmail.com>'
+license       'Apache 2.0'
+summary       'Provision a development environment (on a vm or docker contaner) for puppet development.'
+description   ''
+project_page  'https://github.com/mtbvang/puppet-devpuppet'
+
+dependency 'puppetlabs/stdlib'
