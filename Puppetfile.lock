@@ -1,0 +1,37 @@
+FORGE
+  remote: https://forgeapi.puppetlabs.com
+  specs:
+    leonardothibes-wget (1.0.4)
+    ploperations-bundler (1.0.1)
+      puppetlabs-ruby (>= 0.0.2)
+    puppetlabs-apt (1.7.0)
+      puppetlabs-stdlib (>= 2.2.1)
+    puppetlabs-ruby (0.4.0)
+      puppetlabs-stdlib (< 5.0.0, >= 3.2.0)
+    puppetlabs-stdlib (4.4.0)
+    stahnma-epel (1.0.0)
+
+GIT
+  remote: git://github.com/mtbvang/garethr-docker.git
+  ref: master
+  sha: d22ce564d5cf827c22ed5bceec42260eba502122
+  specs:
+    garethr-docker (1.2.0)
+      puppetlabs-apt (>= 1.1.0)
+      puppetlabs-stdlib (>= 4.1.0)
+      stahnma-epel (>= 0.0.6)
+
+GIT
+  remote: git://github.com/mtbvang/puppet-common.git
+  ref: master
+  sha: 1cf9e3f64c0537c8f29f6cd94d75fcd2ad99eb21
+  specs:
+    mtbvang-common (0.1.0)
+      leonardothibes-wget (= 1.0.4)
+      puppetlabs-stdlib (>= 1.0.0)
+
+DEPENDENCIES
+  garethr-docker (>= 0)
+  mtbvang-common (>= 0)
+  ploperations-bundler (= 1.0.1)
+

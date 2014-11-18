@@ -6,12 +6,10 @@
 class devpuppet::params {
   case $::osfamily {
     'Debian': {
-      $package_name = 'devpuppet'
-      $service_name = 'devpuppet'
+
     }
     'RedHat', 'Amazon': {
-      $package_name = 'devpuppet'
-      $service_name = 'devpuppet'
+
     }
     default: {
       fail("${::operatingsystem} not supported")

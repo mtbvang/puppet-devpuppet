@@ -8,8 +8,6 @@
 #   Explanation of what this parameter affects and what it defaults to.
 #
 class devpuppet (
-  $package_name = $::devpuppet::params::package_name,
-  $service_name = $::devpuppet::params::service_name,
 ) inherits ::devpuppet::params {
 
   # validate parameters here

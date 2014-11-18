@@ -6,3 +6,6 @@ spec/fixtures
 .bundle
 vendor
 /.project
+/.librarian/
+/.tmp/
+/modules/
