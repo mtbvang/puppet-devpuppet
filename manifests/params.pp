@@ -4,15 +4,11 @@
 # It sets variables according to platform
 #
 class devpuppet::params {
+  $devUser = 'dev'
+
   case $::osfamily {
-    'Debian': {
-
-    }
-    'RedHat', 'Amazon': {
-
-    }
-    default: {
-      fail("${::operatingsystem} not supported")
-    }
+    'Debian'           : { $devUserHome = '/home/dev' }
+    'RedHat', 'Amazon' : { fail("${::operatingsystem} not supported") }
+    default            : { fail("${::operatingsystem} not supported") }
   }
 }

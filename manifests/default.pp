@@ -6,4 +6,7 @@ import 'service.pp'
 Exec {
   path => ["/bin/", "/sbin/", "/usr/bin/", "/usr/sbin/", "/usr/local/bin"] }
 
-class { 'devpuppet': }
+class { 'devpuppet':
+  user     => 'vagrant',
+  userHome => '/home/vagrant'
+}
