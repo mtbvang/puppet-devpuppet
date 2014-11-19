@@ -1,7 +1,7 @@
 # == Class devpuppet::install
 #
 class devpuppet::install {
-  $packages = ['wget', 'git', 'ruby-dev', 'g++']
+  $packages = ['wget', 'git', 'ruby-dev', 'g++', 'virtualbox']
 
   package { $packages: ensure => 'installed' } ->
   class { 'common::ubuntu::vagrant':
