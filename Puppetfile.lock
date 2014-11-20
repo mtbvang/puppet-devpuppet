@@ -22,16 +22,16 @@ GIT
       stahnma-epel (>= 0.0.6)
 
 GIT
-  remote: git://github.com/mtbvang/puppet-common.git
+  remote: git://github.com/mtbvang/puppet-mtbvang.git
   ref: master
   sha: 1cf9e3f64c0537c8f29f6cd94d75fcd2ad99eb21
   specs:
-    mtbvang-common (0.1.0)
+    mtbvang-mtbvang (0.1.0)
       leonardothibes-wget (= 1.0.4)
       puppetlabs-stdlib (>= 1.0.0)
 
 DEPENDENCIES
   garethr-docker (>= 0)
-  mtbvang-common (>= 0)
+  mtbvang-mtbvang (>= 0)
   ploperations-bundler (= 1.0.1)
 
