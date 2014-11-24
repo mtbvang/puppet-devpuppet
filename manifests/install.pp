@@ -4,7 +4,7 @@ class devpuppet::install {
   $packages = ['wget', 'git', 'ruby-dev', 'g++']
 
   package { $packages: ensure => 'installed' } ->
-  class { 'common::ubuntu::vagrant':
+  class { 'mtbvang::ubuntu::vagrant':
     user     => $devpuppet::user,
     userHome => $devpuppet::userHome,
   }
@@ -15,8 +15,8 @@ class devpuppet::install {
     deployment => false,
   }
 
-  contain common::ubuntu::vagrant
+  contain mtbvang::ubuntu::vagrant
 
-  class { 'common::ubuntu::virtualbox': }
-  contain common::ubuntu::virtualbox
+  class { 'mtbvang::ubuntu::virtualbox': }
+  contain mtbvang::ubuntu::virtualbox
 }

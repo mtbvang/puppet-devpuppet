@@ -5,7 +5,7 @@ forge "http://forge.puppetlabs.com"
 
 mod 'ploperations/bundler', '1.0.1'
 
-mod 'mtbvang/common',
+mod 'mtbvang/mtbvang',
   :git => 'git://github.com/mtbvang/puppet-mtbvang.git'
 #  :ref => '>= 0.1.0'
 
